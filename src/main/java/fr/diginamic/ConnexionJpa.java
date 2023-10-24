@@ -13,7 +13,6 @@ public class ConnexionJpa {
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("recensement_jpa");
 		EntityManager em = emf.createEntityManager();
 		EntityTransaction transaction = em.getTransaction();
-		
 		transaction.begin();
 		
 		Region r = em.find(Region.class, 1);
